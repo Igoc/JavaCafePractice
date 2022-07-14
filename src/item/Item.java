@@ -2,7 +2,7 @@ package item;
 
 import java.time.LocalDateTime;
 
-public class Item {
+public abstract class Item {
     private String name;
     private int price;
     private LocalDateTime shelfLife;
@@ -12,6 +12,8 @@ public class Item {
         this.price = price;
         this.shelfLife = shelfLife;
     }
+
+    public abstract void showTakeMethod();
 
     public String getName() {
         return name;
